@@ -124,6 +124,9 @@ public class LinkedList {
         if (index == 0) {
             original = first.data;
             first = first.next;
+            if(size == 1){
+                last = null;
+            }
         } else {
             Node current = first;
             for (int i = 0; i < index - 1; i++) {
