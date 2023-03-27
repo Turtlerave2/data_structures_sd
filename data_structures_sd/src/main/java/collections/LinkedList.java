@@ -6,9 +6,9 @@ package collections;
  */
 public class LinkedList {
 
-    private Node first;
-    private Node last;
-    private int size;
+    protected Node first;
+    protected Node last;
+    protected int size;
 
     public LinkedList() {
         first = null;
@@ -143,10 +143,10 @@ public class LinkedList {
         return original;
     }
 
-    private static class Node {
+    protected static class Node {
 
-        private int data;
-        private Node next;
+        protected int data;
+        protected Node next;
 
         public Node(int value) {
             this.data = value;
